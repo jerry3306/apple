@@ -1,0 +1,293 @@
+/* 
+  初始化样式
+  符号*，代表所有的样式
+ */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	--r-globalnav-height: 44px;
+	--r-globalnav-segmentbar-height: 0;
+	--r-globalnav-viewport-large-min-width: 1024px;
+	--r-globalnav-viewport-large-max-width: 1441px;
+	--r-globalnav-viewport-large-query: (min-width: 1024px);
+	--r-globalnav-viewport-medium-min-width: 768px;
+	--r-globalnav-viewport-medium-max-width: 1023px;
+	--r-globalnav-viewport-medium-query: (max-width: 1023px);
+	--r-globalnav-viewport-small-min-width: 420px;
+	--r-globalnav-viewport-small-max-width: 767px;
+	--r-globalnav-viewport-small-query: (max-width: 767px);
+	--r-globalnav-viewport-xsmall-min-width: 320px;
+	--r-globalnav-viewport-xsmall-max-width: 419px;
+	--r-globalnav-viewport-xsmall-query: (max-width: 419px);
+}
+body:lang(zh-CN) {
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body:lang(zh) {
+    letter-spacing: 0em;
+}
+body {
+    min-width: 320px;
+}
+.ad{
+	background: #444;
+	text-align: right;
+	position: fixed;
+	z-index: 9999999;
+	width: 100%;
+}
+.ad span{
+	display: inline-block;
+	margin-right: 16px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 12px;
+	color: #a8a8aa;
+	font-weight: 400;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nav{
+	width: 100%;
+	height: 44px;
+	background: #000;
+	/*
+	  r->red
+	  g->green
+	  b->blue
+	  a->透明度
+	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 99999;
+	top: 44px;
+}
+
+.ad-nav-height{
+	width: 100% ;
+	height: 88px;
+}
+
+.nav a{
+	color: #FFFFFF;
+	/* 设置下划线属性:underline(a标签的默认样式) */
+	text-decoration: none;
+	width: 102px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;;
+}
+
+.nav .logo{
+	height: 44px;
+	background-image: url(../img/apple.svg);
+	/* 设置背景图片不重复 */
+    background-repeat: no-repeat;
+	/* 设置背景图片的位置 */
+	background-position: center;
+}
+
+.nav .search{
+	height: 44px;
+	background-image: url(../img/search.svg);
+	/* 设置背景图片不重复 */
+	background-repeat: no-repeat;
+	/* 设置背景图片的位置 */
+	background-position: center 0; 
+	background-size:18px 88px;
+}
+
+.nav .buy{
+	height: 44px;
+	background-image: url(../img/buy.svg);
+	/* 设置背景图片不重复 */
+	background-repeat: no-repeat;
+	/* 设置背景图片的位置 */
+	background-position: center; 
+}
+
+.toggleBtn{
+	width: 50px;
+	height: 44px;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	position: relative;
+}
+.toggleBtn .line{
+	height: 1px;
+	width: 18px;
+	background: white;
+	margin: 5px 0px;
+	display: none;
+	transition: all 0.5s;
+}
+
+.navpage{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 0vh;
+	background: #000;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* padding-top: 44px; */
+	overflow: hidden;
+	z-index: 99;
+	transition: all 0.7s;
+	 
+}
+
+/* .navMain::after{
+	display: none;
+} */
+
+/* 
+  当屏幕小于768像素的样式
+ */
+
+@media only screen and (max-width:768px) {
+	.toggleBtn{
+		display: flex;
+		z-index: 100;
+		position: relative;
+	}
+	.toggleBtn .line{
+		display: block;
+	}
+	.nav .text,.search{
+		display: none;
+	}
+	
+	.nav{
+		justify-content: space-between;
+	}
+	.nav a{
+		width: 50px;
+	}
+	
+	.nav .toggleBtn{
+		order: 1;
+	}
+	.nav .logo{
+		order: 2;
+		z-index: 100;
+		position: relative;
+	}
+	
+	.nav .buy{
+		order: 3;
+	}
+	
+	#choose:checked~.toggleBtn .line:nth-child(1){
+		position: absolute;
+	    margin: 0;
+		transform: rotate(45deg);
+	}
+	
+	#choose:checked~.toggleBtn .line:nth-child(2){
+		position: absolute;
+		margin: 0;
+		transform: rotate(-45deg);
+	}
+	
+	#choose:checked~.navpage{
+		display: flex;
+		/* 
+		  vw:viewport width:100vw == 100% viewport width
+		  vh:viewport height:100vh == 100% viewpoer height
+		 */
+		width: 100vw;
+		height: 100vh;
+		background: #000;
+		color: #fff;
+		position: fixed;
+		left: 0;
+		top: 0;
+		flex-direction:column;
+	}
+	
+	#choose:checked~.buy{
+		z-index: 0;
+	}
+	
+	.searchInput{
+		margin: 88px 14px 0px 14px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		height: 36px;
+		border-radius: 5px;
+		color: #ccc;
+		background:#1d1d1f;
+		position: relative;
+		
+	}
+	
+    
+	
+	.icon{
+		height: 100%;
+		width: 36px;
+		background-image: url(../img/search_small.svg);
+		background-size: 13px;
+		background-position:13px 13px;
+		background-repeat: no-repeat;
+	}
+    
+	.searchInput input{
+		flex: 1;
+		height: 100%;
+		background: transparent;
+		border: none;
+		outline: none;
+		color: #ccc;
+		font-size: 17px;
+	}
+	
+	.searchInput+hr{
+		border: none;
+		border-bottom: 1px solid #424245;
+		margin-top:15px ;
+	}
+	
+	.navList{
+		display: flex;
+		flex-direction: column;
+		margin: 10px 40px 0px 40px;
+	}
+	
+	.navList .navText{
+		width: 100%;
+		height: 44px;
+		line-height: 44px;
+		text-align: left;
+		font-size: 17px;
+		color: #ccc;
+		font-weight: 400;
+		border-bottom: 1px solid #424245;
+	}
+	
+	.navList .navText:last-child{
+		border: none;
+	}
+}
+
+
+/* @media only screen and (min-width:768px) {
+	.navpage{
+		background: none;
+	}
+	
+	.toggleBtn{
+		display: none;
+	}
+} */

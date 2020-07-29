@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,
+				   initial-scale=1,
+				   minimum-scale=1,
+				   maximum-scale=1,
+				   user-scalable=no"/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" type="text/css" href="./css/banner.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/product.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" />
+		
+	</head>
+	<body>
+		<!-- 
+		    1.分析页面结构
+			2.先写html
+			3.再写样式
+			注意：分析页面是否包含移动端,如包含移动端一定要加上meta viewport
+		 -->
+		 <div class="ad">
+			 <span> <广告> </span>
+		 </div>
+		 <div class="nav">
+		 	<a class="logo" href=""></a>
+		 	<a class="text" href="">Mac</a>
+		 	<a class="text" href="">iPad</a>
+		 	<a class="text" href="">iPhone</a>
+		 	<a class="text" href="">Watch</a>
+		 	<a class="text" href="">TV</a>
+		 	<a class="text" href="">Music</a>
+		 	<a class="text" href="">Support</a>
+		 	<a href="" class="search"></a>
+		 	
+			<input type="checkbox" id="choose" name="choose" value="" hidden=""/>
+			<label class="toggleBtn" for="choose">
+				<span class="line"></span>
+				<span class="line"></span>
+			</label>
+			<a href="" class="buy"></a>
+			
+			<div class="navpage">
+				<div class="navMain">
+					
+					<div class="searchInput" >
+						<div class="icon"></div>
+						<input type="text" placeholder="search apple.com" />
+				    </div>
+					
+					<hr />
+					
+					<div class="navList">
+						<a href="" class="navText">Mac</a>
+						<a href="" class="navText">iPad</a>
+						<a href="" class="navText">iPhone</a>
+						<a href="" class="navText">Watch</a>
+						<a href="" class="navText">TV</a>
+						<a href="" class="navText">Music</a>
+						<a href="" class="navText">Support</a>
+					</div>
+				</div>
+			 </div>
+			
+		 </div>
+		 
+		 <div class="ad-nav-height"></div>
+		 
+		 <div class="banner-content">
+			 <div class="banner-top">
+				 <p>
+					 <span>
+						 <a href="">在线选购</a>
+						 <span>，享受免费送货、Specialist 专家支持、免息分期等服务。</span>
+					 </span>
+				 </p>
+			 </div>
+			 
+			 <div class="banner-list">
+				 <div class="banner">
+					 <a href="" class="banner-link"></a>
+					 <div class="banner-text">
+						 
+						 <span class="banner-text-new">新款</span>
+						 <h2 class="banner-text-type">iPhone SE</h2>
+						 <p class="banner-text-desc">
+							 <span>称心称手,超值入手。<br>RMB 3299起</span>
+						 </p>
+						 <p class="banner-text-content"><span>抵折换购,仅 RMB 96/月或 RMB 2299起<sup class="banner-text-content-tips"><a href="">1</a></sup>。</span></p>
+						 <p class="banner-text-link-box">
+							 <a href="http://www.ispanish.cn" class="banner-text-link">进一步了解 >小冯 </a>
+							 <a href="http://www.dudugua.com" class="banner-text-link">购买 > </a>
+						 </p>
+					 </div>
+					 
+					 <div class="banner-cover">
+						 <figure class="banner-cover-image"></figure>
+					 </div>
+				 </div>
+				 
+				 
+				 <div class="banner white-back">
+					 <a href="" class="banner-link"></a>
+					 <div class="banner-text">
+						 <h2 class="banner-text-type banner-text-type-sec">iPhone 11</h2>
+						 <p class="banner-text-desc banner-text-desc-sec">
+						 	 <span>一切都刚刚好。</span>
+						 </p>
+						 <p class="banner-text-content"><span>折抵换购，仅 RMB 175 每月或 RMB 4199 起<sup class="banner-text-content-tips"><a href="">1</a></sup>。</span></p>
+						 <p class="banner-text-link-box">
+							 <a href="http://www.ispanish.cn" class="banner-text-link">进一步了解 > </a>
+							 <a href="http://www.baidu.com" class="banner-text-link">购买 > </a>
+						 </p>
+					 </div>
+					 
+					 <div class="banner-cover">
+						 <figure class="banner-cover-image banner-cover-image-sec"></figure>
+					 </div>
+				 </div>
+				 
+				 
+				 <div class="banner hui-back">
+					 <a href="" class="banner-link"></a>
+					 <div class="banner-text">
+						 <p class="banner-text-desc banner-text-desc-three">
+							 <span>为高校生活购买Mac<br>或iPad,AirPods 搭配其中</span>
+						 </p>
+						 
+						 <p class="banner-text-link-box">
+							 <a href="http://www.ispanish.cn" class="banner-text-link">选购</a>
+						 </p>
+					 </div>
+					 
+					 <div class="banner-cover">
+						 <figure class="banner-cover-image banner-cover-image-three"></figure>
+					 </div>
+				 </div>
+				 
+			 </div>
+		 </div>
+         
+		 
+		 <div class="product-content">
+		 	<div class="product">
+		 		<a href="" class="product-link"></a>
+		 		<div class="product-text">
+					<h2 class="product-text-title">换成 iPhone</h2>
+					<p class="product-text-content">超多理由，超方便。</p>
+					<p class="product-text-link-box">
+						<a href="http://www.baidu.com" class="product-text-link">进一步了解 > </a>
+						 
+					</p>
+				</div>
+		 		<div class="product-cover">
+		 			<figure class="product-cover-image"></figure>
+		 		</div>
+		 	</div>
+			
+			<div class="product">
+				<a href="" class="product-link"></a>
+				<div class="product-text">
+					<h2 class="product-text-title">iPad Pro</h2>
+					<p class="product-text-content">你的下一台电脑，何必是电脑。</p>
+					<p class="product-text-link-box">
+						<a href="" class="product-text-link">进一步了解  ></a>
+						<a href="" class="product-text-link">购买 ></a>
+					</p>
+				</div>
+				<div class="product-cover">
+					<figure class="product-cover-image product2-img"></figure>
+				</div>
+			</div>
+			
+			<div class="product">
+				<a href="" class="product-link"></a>
+				<div class="product-text">
+					<h2 class="product-text-icon"></h2>
+					<p class="product-text-content">自带全天候视网膜显示屏。<br>这块表，好不一样。</p>
+					<p class="product-text-link-box">
+						<a href="" class="product-text-link">进一步了解 > </a>
+						<a href="" class="product-text-link">购买 > </a>
+					</p>
+				</div>
+				<div class="product-cover">
+					<figure class="product-cover-image product3-img"></figure>
+				</div>
+			</div>
+			
+			<div class="product dark-back">
+				<a href="" class="product-link"></a>
+				<div class="product-text">
+					<h3 class="product-text-content white-content">RADWIMPS 乐队<br/>全新单曲，独家呈现，<br/>先听为快。</h3>
+					<p class="product-text-link-box">
+						<a href="" class="product-text-link white-link">免费试用<sup>2</sup> > </a>
+						<a href="" class="product-text-link white-link">进一步了解 > </a>
+					</p>
+				</div>
+				<div class="product-cover">
+					<figure class="product-cover-image product4-img"></figure>
+				</div>
+				
+				<div class="music-icon-contrain">
+					<span></span>
+				</div>
+			</div>
+			
+			
+			<div class="product">
+				<a href="" class="product-link"></a>
+				<div class="product-text">
+					<span class="product-text-new">新款</span>
+					<h2 class="product-text-title">MacBook Air</h2>
+					<p class="product-text-desc">速度加倍，容量翻番。</p>
+					<p class="product-text-content">
+						<span>现 RMB 7799 起售</span>
+					</p>
+					<p class="product-text-link-box">
+						<a href="" class="product-text-link">进一步了解 > </a>
+						<a href="" class="product-text-link">购买 > </a>
+					</p>
+				</div>
+				
+				<div class="product-cover">
+					<figure class="product-cover-image product5-img"></figure>
+				</div>
+				
+			</div>
+			
+			
+			<div class="product black-back">
+				<a href="" class="product-link"></a>
+				<div class="product-text">
+					<h2 class="product-text-title white-title">AirPods Pro</h2>
+					<p class="product-text-content white-content">妙得不同凡响。</p>
+					<p class="product-text-link-box">
+						<a href="" class="product-text-link">进一步了解 > </a>
+						<a href="" class="product-text-link">购买 > </a>
+					</p>
+				</div>
+				<div class="product-cover">
+					<figure class="product-cover-image product6-img"></figure>
+				</div>
+			</div>
+		 </div>
+	<div class="footer">	 
+     <div class="footer-content">
+     	  <div class="terms">
+     	  	 <p>
+				 <span>
+					 1. 所示的 iPhone 11 Pro 64GB 机型价格是使用 iPhone X 64GB 机型进行折抵换购的价格。所示的 iPhone 11 64GB 机型价格是使用 iPhone 8 Plus 64GB 机型进行折抵换购的价格。所示的 iPhone SE 64GB 机型价格是使用 iPhone 8 64GB 机型进行折抵换购的价格。上述所示分期付款金额仅为折抵换购后使用特定期数免息分期付款估算得出的示例 (仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。最高可享 24 期免息分期，到 Apple Store 零售店和在线商店购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。折抵服务的购新价格仅可在限定时间内使用，并且要求用于购买新款 iPhone，以限制条款为准。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对此不做任何承诺和保证。Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其他优惠或折扣活动同时使用。如需了解更多免息分期付款信息，请点击<a href="" class="terms-link">此处</a>
+				 </span>
+			 </p>
+			 <p>
+				 <span>2. 免费试用期结束后，每月收费 RMB 10。无需合约。当试用期结束后，会员方案将按月自动续订，直至取消订阅。</span>
+			 </p>
+			 <p>
+				 <span>妙控键盘需单独购买。</span>
+			 </p>
+     	  </div>
+		  
+		  <hr class="footer-line">
+		  
+		  <div class="more-big">
+			  <div class="more-big-list">
+				  <ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">选购及了解</li>
+					  <li><a href="">Mac</a></li>
+					  <li><a href="">iPad</a></li>
+					  <li><a href="">iPhone</a></li>
+					  <li><a href="">Watch</a></li>
+					  <li><a href="">Music</a></li>
+					  <li><a href="">AirPods</a></li>
+					  <li><a href="">HomePod</a></li>
+					  <li><a href="">iPod touch</a></li>
+					  <li><a href="">配件</a></li>
+					  <li><a href="">App Store 充值卡</a></li>
+				  </ul>
+			  </div>
+			  
+			  <div class="more-big-list">
+				  <ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">服务</li>
+					  <li><a href="">Apple Music</a></li>
+					  <li><a href="">iCould</a></li>
+					   
+				  </ul>
+				  <ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">账户</li>
+					  <li><a href="">管理您的Apple ID</a></li>
+					  <li><a href="">Apple Store 账户</a></li>
+					  <li><a href="">iCould.com</a></li>
+				  </ul>
+			  </div>
+			  
+			  <div class="more-big-list">
+				  <ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">Apple Store商店</li>
+					  <li><a href="">查找零售店</a></li>
+					  <li><a href="">在线选购</a></li>
+					  <li><a href="">Genius Bar 天才吧</a></li>
+					  <li><a href="">Today at Apple</a></li>
+					  <li><a href="">Apple 夏令营</a></li>
+					  <li><a href="">Apple Store App</a></li>
+					  <li><a href="">翻新和优惠</a></li>
+					  <li><a href="">分期付款</a></li>
+					  <li><a href="">Apple Trade In 换购计划</a></li>
+					  <li><a href="">订单状态</a></li>
+					  <li><a href="">选购帮助</a></li>
+				  </ul>
+			  </div>
+			  
+			  <div class="more-big-list">
+			  		<ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">商务应用</li>
+					  <li><a href="">Apple 与商务</a></li>
+					  <li><a href="">商务选购</a></li>	   
+			  		</ul>
+			  		<ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">教育应用</li>
+					  <li><a href="">Apple 与教育</a></li>
+					  <li><a href="">高校师生选购</a></li>
+			  		</ul>
+			  </div>
+			  
+			  <div class="more-big-list">
+			  		<ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">Apple 价值观</li>
+					  <li><a href="">辅助功能</a></li>
+					  <li><a href="">环境责任</a></li>
+					  <li><a href="">隐私</a></li>
+					  <li><a href="">供应商责任</a></li>
+			  		</ul>
+			  		<ul class="more-big-list-ul">
+					  <li class="more-big-list-first-li">关于 Apple</li>
+					  <li><a href="">Newsroom</a></li>
+					  <li><a href="">Apple 管理层</a></li>
+					  <li><a href="">工作机会</a></li>
+					  <li><a href="">创造就业</a></li>
+					  <li><a href="">活动</a></li>
+					  <li><a href="">联系 Apple</a></li>
+			  		</ul>
+			  </div>
+			  
+			  
+		  </div>
+		  
+		  <div class="more-small" >
+			  <div class="more-small-list">
+				  <div class="show-more-small-btn">
+						  <div class="show-more-small-btn-left">
+							<span class="show-more-small-checkbox-text">选购及了解</span>
+						  </div>
+						  <div class="show-more-small-btn-right">
+							  <span class="show-more-small-checkbox-line"></span>
+							  <span class="show-more-small-checkbox-line"></span>
+						  </div>
+						
+				  </div>
+				  <div class="more-small-ul-contrain">
+				  	<ul class="more-small-ul">
+						  <li><a href="">Mac</a></li>
+						  <li><a href="">iPad</a></li>
+						  <li><a href="">iPhone</a></li>
+						  <li><a href="">Watch</a></li>
+						  <li><a href="">Music</a></li>
+						  <li><a href="">AirPods</a></li>
+						  <li><a href="">HomePod</a></li>
+						  <li><a href="">iPod touch</a></li>
+						  <li><a href="">配件</a></li>
+						  <li><a href="">App Store 充值卡</a></li>
+				  	</ul>
+				  </div>
+				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+				  <div class="show-more-small-btn">
+						  <div class="show-more-small-btn-left">
+							<span class="show-more-small-checkbox-text">服务</span>
+						  </div>
+						  <div class="show-more-small-btn-right">
+							  <span class="show-more-small-checkbox-line"></span>
+							  <span class="show-more-small-checkbox-line"></span>
+						  </div>
+						
+				  </div>
+				  <div class="more-small-ul-contrain">
+					<ul class="more-small-ul">
+						
+						<li><a href="">Apple Music</a></li>
+						<li><a href="">iCould</a></li>
+					</ul>
+				  </div>
+				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+				  <div class="show-more-small-btn">
+						  <div class="show-more-small-btn-left">
+							<span class="show-more-small-checkbox-text">账户</span>
+						  </div>
+						  <div class="show-more-small-btn-right">
+							  <span class="show-more-small-checkbox-line"></span>
+							  <span class="show-more-small-checkbox-line"></span>
+						  </div>
+						
+				  </div>
+				  <div class="more-small-ul-contrain">
+					<ul class="more-small-ul">
+						  <li><a href="">管理您的Apple ID</a></li>
+						  <li><a href="">Apple Store 账户</a></li>
+						  <li><a href="">iCould.com</a></li>
+					</ul>
+				  </div>
+				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+				  <div class="show-more-small-btn">
+						  <div class="show-more-small-btn-left">
+							<span class="show-more-small-checkbox-text">Apple Store商店</span>
+						  </div>
+						  <div class="show-more-small-btn-right">
+							  <span class="show-more-small-checkbox-line"></span>
+							  <span class="show-more-small-checkbox-line"></span>
+						  </div>
+						
+				  </div>
+				  <div class="more-small-ul-contrain">
+					<ul class="more-small-ul">
+						   
+						  <li><a href="">查找零售店</a></li>
+						  <li><a href="">在线选购</a></li>
+						  <li><a href="">Genius Bar 天才吧</a></li>
+						  <li><a href="">Today at Apple</a></li>
+						  <li><a href="">Apple 夏令营</a></li>
+						  <li><a href="">Apple Store App</a></li>
+						  <li><a href="">翻新和优惠</a></li>
+						  <li><a href="">分期付款</a></li>
+						  <li><a href="">Apple Trade In 换购计划</a></li>
+						  <li><a href="">订单状态</a></li>
+						  <li><a href="">选购帮助</a></li>
+					</ul>
+				  </div>
+				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+			  				  <div class="show-more-small-btn">
+			  						  <div class="show-more-small-btn-left">
+			  							<span class="show-more-small-checkbox-text">商务应用</span>
+			  						  </div>
+			  						  <div class="show-more-small-btn-right">
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  						  </div>
+			  						
+			  				  </div>
+			  				  <div class="more-small-ul-contrain">
+			  					<ul class="more-small-ul">
+			  						  <li><a href="">Apple 与商务</a></li>
+			  						  <li><a href="">商务选购</a></li>
+			  					</ul>
+			  				  </div>
+			  				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+			  				  <div class="show-more-small-btn">
+			  						  <div class="show-more-small-btn-left">
+			  							<span class="show-more-small-checkbox-text">教育应用</span>
+			  						  </div>
+			  						  <div class="show-more-small-btn-right">
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  						  </div>
+			  						
+			  				  </div>
+			  				  <div class="more-small-ul-contrain">
+			  					<ul class="more-small-ul">
+			  						  <li><a href="">Apple 与教育</a></li>
+			  						  <li><a href="">高校师生选购</a></li>
+			  					</ul>
+			  				  </div>
+			  				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+			  				  <div class="show-more-small-btn">
+			  						  <div class="show-more-small-btn-left">
+			  							<span class="show-more-small-checkbox-text">Apple 价值观</span>
+			  						  </div>
+			  						  <div class="show-more-small-btn-right">
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  						  </div>
+			  						
+			  				  </div>
+			  				  <div class="more-small-ul-contrain">
+			  					<ul class="more-small-ul">
+			  						  <li><a href="">辅助功能</a></li>
+			  						  <li><a href="">环境责任</a></li>
+			  						  <li><a href="">隐私</a></li>
+			  						  <li><a href="">供应商责任</a></li>
+			  					</ul>
+			  				  </div>
+			  				  <hr class="footer-line" />
+			  </div>
+			  
+			  <div class="more-small-list">
+			  				  <div class="show-more-small-btn">
+			  						  <div class="show-more-small-btn-left">
+			  							<span class="show-more-small-checkbox-text">关于 Apple</span>
+			  						  </div>
+			  						  <div class="show-more-small-btn-right">
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  							  <span class="show-more-small-checkbox-line"></span>
+			  						  </div>
+			  						
+			  				  </div>
+			  				  <div class="more-small-ul-contrain">
+			  					<ul class="more-small-ul">
+			  						  <li><a href="">Newsroom</a></li>
+			  						  <li><a href="">Apple 管理层</a></li>
+			  						  <li><a href="">工作机会</a></li>
+			  						  <li><a href="">创造就业</a></li>
+			  						  <li><a href="">活动</a></li>
+			  						  <li><a href="">联系 Apple</a></li>
+			  					</ul>
+			  				  </div>
+			  				  <hr class="footer-line" />
+			  </div>
+			   
+		  </div>
+		  
+		  <p class="more-buy-style">
+		  更多选购方式:
+		  <a href="">查找你附近的 Apple Store 零售店</a>
+		  及
+		  <a href="">更多门店</a>
+		  ,或者致电 400-666-8800
+		  </p>
+		  <hr class="footer-line"/>
+		  
+		  <div class="copyright">
+			  <div class="copyright-text">
+				  <span>Copyright © 2020 Apple Inc. 保留所有权利。</span>
+			  </div>
+			  <div class="copyright-list">
+				  <ul class="copyright-list-ul">
+				  	<li><a href="">隐私政策</a></li>
+					<li><a href="">使用条款</a></li>
+					<li><a href="">销售政策</a></li>
+					<li><a href="">法律信息</a></li>
+					<li><a href="">网站地图</a></li>
+				  </ul>
+			  </div>
+		  </div>
+		  
+		  <p class="icp">京ICP备10214630 营业执照 无线电发射设备销售备案编号11201910351200</p>
+     </div>
+    </div>
+		 
+	</body>
+</html>
+<script type="text/javascript" src="./js/jquery.2.1.4.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
